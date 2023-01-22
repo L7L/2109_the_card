@@ -1,0 +1,5 @@
+FROM alpine 
+RUN apt-get update && apt install git -y
+MKDIR /kc
+WORKDIR /kc
+CMD git clone https://github.com/L7L/2109_the_card.git
